@@ -13,6 +13,7 @@ public class ScrollingExample {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.carwale.com/?utm_source=google&utm_medium=cpc&utm_campaign=6038662&gclid=EAIaIQobChMIxqaqi7nB5gIVixePCh2wgwx9EAAYAyAAEgIPyvD_BwE");
 		driver.manage().window().maximize();
+		((JavascriptExecutor) driver).executeScript("scroll(0,800)");
 driver.findElement(By.xpath("//*[@id=\"moreComparison\"]/a")).click();
 	}
 }
